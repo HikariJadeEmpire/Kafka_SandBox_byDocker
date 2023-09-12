@@ -3,7 +3,11 @@
 **GOAL :** <br>
 > Learning real-time streaming with Kafka.
 
-# References command
+# Framework
+
+![Personal visualization - Kafka](https://github.com/HikariJadeEmpire/Kafka_SandBox_byDocker/assets/118663358/888a5eab-2be1-406c-a4b0-beb394fe7756)
+
+# References commands
 
 Create Topics through Docker :
 
@@ -47,7 +51,17 @@ curl -s -X GET http://localhost:8083/connector-plugins
 
 ```
 
-#
+# Source & Sink Connector
+
+**SOURCE :** <br>
+- [MySQL to MySQL](https://github.com/HikariJadeEmpire/Kafka_SandBox_byDocker/blob/main/KafkaJdbcConnect_mySql-mySql/source.json)
+- [MySQL to HDFS](https://github.com/HikariJadeEmpire/Kafka_SandBox_byDocker/blob/main/KafkaJdbcConnect_mySql-HDFS/source.json)
+
+**SINK :** <br>
+- [MySQL to MySQL](https://github.com/HikariJadeEmpire/Kafka_SandBox_byDocker/blob/main/KafkaJdbcConnect_mySql-mySql/sink-mysql.json)
+- [MySQL to HDFS](https://github.com/HikariJadeEmpire/Kafka_SandBox_byDocker/blob/main/KafkaJdbcConnect_mySql-HDFS/sink-hdfs.json)
+
+<br>
 
 Define source connector :
 
