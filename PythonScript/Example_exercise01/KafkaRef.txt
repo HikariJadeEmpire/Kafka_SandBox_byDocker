@@ -1,0 +1,16 @@
+Check status
+1.	> docker-compose up -d
+2.	> docker ps
+3.	> docker exec -it zookeeper /bin/zookeeper-shell localhost:2181
+4.	> ls /brokers/ids //To check running brokers in zookeeper
+Exit by typing “Ctrl-C”
+
+Open a new terminal (CMD) to create a new topic & producer
+1.    > docker exec -it kafka2 /bin/bash
+2.    > kafka-topics --bootstrap-server localhost:9092 --create --topic randomTopic
+3.    > kafka-console-producer --bootstrap-server localhost:9092 --topic randomTopic --partions 2 — replication-factors 3
+      > Type somethings
+
+Open a new terminal (CMD)to create a consumer
+1.    > docker exec -it kafka3 /bin/bash
+2.    > kafka-console-consumer --bootstrap-server localhost:9092 --topic randomTopic --from-beginning 
