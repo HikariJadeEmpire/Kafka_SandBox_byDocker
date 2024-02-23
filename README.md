@@ -9,6 +9,14 @@
 
 # References commands
 
+Build environment
+
+```bash
+
+docker-compose up --build
+
+```
+
 Create Topics through Docker :
 
 ```bash
